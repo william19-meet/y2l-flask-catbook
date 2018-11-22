@@ -20,3 +20,6 @@ def get_all_cats():
 def get_cat(id):
 	cat_profile = session.query(Cat).filter_by(id = id).one()
 	return cat_profile
+
+def add_vote(id):
+	vote = vote + 1
